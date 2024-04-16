@@ -67,13 +67,11 @@
     border-radius: 10px;
 }
 
-/* Estilos para etiquetas */
 label {
     display: block;
     margin-bottom: 5px;
 }
 
-/* Estilos para campos de entrada y select */
 input[type="text"],
 select,
 textarea {
@@ -84,15 +82,18 @@ textarea {
     border-radius: 5px;
 }
 
-/* Estilos para botón de envío */
+
 button[type="submit"] {
     width: 100%;
     padding: 10px;
-    background-color: #4CAF50;
+    background-color: orange;
     color: white;
     border: none;
     border-radius: 5px;
     cursor: pointer;
+}
+button:hover{
+    background-color: rgb(192, 63, 192);;
 }
 
 /* Estilos para mensajes de error */

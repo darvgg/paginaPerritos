@@ -80,7 +80,7 @@ section{
   justify-content: center;
   width: 50px;
   height: 50px;
-  font-size: 14px; /* Especificar un tamaño de fuente en píxeles */
+  font-size: 14px; 
   font-weight: bold;
   color: #fff;
   background-color: #ffbc05;
@@ -88,7 +88,7 @@ section{
   border-radius: 50%;
   cursor: pointer;
   text-decoration: none;
-  margin: 10px; /* Añadir un margen para separar los botones */
+  margin: 10px;
 }
 
 .botonRedondo img {
@@ -158,10 +158,10 @@ section{
 @media (max-width: 768px) {
   .navbar{
     justify-content: space-around;
-    height: auto; /* Cambiar la altura a 'auto' para que se ajuste automáticamente al contenido */
+    height: auto;
   }
   .logo img{
-    height: 1em; /* Ajustar la altura de la imagen del logo según sea necesario */
+    height: 1em;
   }
   .navbar a {
     padding: 0px 0px;
@@ -192,15 +192,15 @@ section{
     margin-right: 10px;
   }
   .formasContactar {
-    flex-direction: column; /* Cambia a columna en pantallas pequeñas */
-    align-items: center; /* Centra los elementos horizontalmente */
+    flex-direction: column; 
+    align-items: center; 
   }
 
   .contactarHijo {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
-    height: auto; /* Establece una altura mínima para los elementos */
+    height: auto; 
   }
 
   .agendar p{

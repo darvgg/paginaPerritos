@@ -103,28 +103,28 @@
 .review .redesSociales {
     display: flex;
     justify-content: center;
-    margin-top: 15px; /* Agregar margen superior para separar las redes sociales */
+    margin-top: 15px; 
 }
 .review h2 {
     color: white;
     font-weight: bold;
-    font-size: 50px; /* Especificar un tamaño de fuente en píxeles */
-    text-align: center; /* Centrar el texto horizontalmente */
+    font-size: 50px; 
+    text-align: center; 
 }
 
 
 .comoCuidar {
     display: flex;
     flex-direction: row;
-    justify-content: space-between; /* Alinear los elementos horizontalmente */
-    align-items: center; /* Alinear los elementos verticalmente */
+    justify-content: space-between; 
+    align-items: center; 
 }
 .cuidarHijo1, .cuidarHijo2 {
-    flex-basis: calc(50% - 15px); /* Calcula el 50% del ancho menos el espacio entre elementos */
-    margin: 0 7.5px; /* Añade un margen horizontal para espaciar los elementos */
-    padding: 15px; /* Añade un relleno para separar el contenido de los bordes */
-    height: auto; /* Permitir que la altura se ajuste según el contenido */
-    width: auto; /* Permitir que el ancho se ajuste según el contenido */
+    flex-basis: calc(50% - 15px); 
+    margin: 0 7.5px; 
+    padding: 15px; 
+    height: auto; 
+    width: auto; 
 }
 .cuidarHijo1 {
     order: 1;
@@ -148,20 +148,20 @@
 
 .metodos {
     display: flex;
-    flex-wrap: row wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
-    justify-content: center; /* Centrar los elementos horizontalmente */
+    flex-wrap: row wrap; 
+    justify-content: center; 
     max-width: 100%;
 }
 .metodo1, .metodo2, .metodo3, .metodo4 {
-    flex: 1; /* Distribuir el espacio disponible entre los elementos */
+    flex: 1; 
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar los elementos verticalmente */
-    padding: 20px; /* Agregar espacio interno */
-    max-width: 100%; /* Establecer un ancho máximo para cada método */
+    align-items: center; 
+    padding: 20px; 
+    max-width: 100%;
 }
 span:hover {
     color: orange;
@@ -182,10 +182,10 @@ span:hover {
     font-size: 36px;
 }
 .metodos p {
-    font-size: 25px; /* Tamaño de fuente para el texto */
+    font-size: 25px; 
 }
 .metodos span {
-    font-size: 25px; /* Tamaño de fuente para el texto del enlace */
+    font-size: 25px; 
     cursor: pointer;
 }
 
@@ -224,24 +224,28 @@ span:hover {
 }
 .testimonioHijo2 {
     display: flex;
-    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
-    justify-content: center; /* Centrar los elementos horizontalmente */
+    flex-wrap: wrap;
+    justify-content: center; 
     max-width: 100%;
 }
 .comentario {
-    flex: 1; /* Distribuir el espacio disponible entre los elementos */
+    flex: 1;
     display: flex;
     flex-direction: column;
-    align-items: center; /* Centrar los elementos verticalmente */
-    padding: 20px; /* Agregar espacio interno */
-    width: 50%; /* Establecer un ancho máximo para cada método */
+    align-items: center; 
+    padding: 20px;
+    width: 50%; 
     height: 100%;
-    text-align: center; /* Centrar el texto horizontalmente */
+    text-align: center;
+    background-image: url(imagenes/comillas.png);
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 .fotoPersona img {
     width: 80px;
     height: 80px;
-    border-radius: 50%; /* Esto hace que la imagen sea un círculo */
+    border-radius: 50%; 
 }
 .testimonioHijo3 {
     display: flex;
