@@ -1,0 +1,157 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 20vw;
+}
+
+.contDualFil{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    height: auto;
+}
+.contDualCol{
+    margin-top: 50px;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    height: auto;
+}
+.contDhijo{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    justify-content:left;
+    width: 100%;
+    height: auto;
+}
+
+.contDhijo h4{
+    font-size: 24px;
+}
+.contDhijo h3{
+    font-size: 30px;
+}
+.contDhijo p{
+    font-size: 20px;
+}
+.contDhijo img{
+    max-width: 100%;
+    height: auto;
+}
+.contDhijo h2{
+    font-size: 40px;
+}
+.contDhijo h1{
+    font-size: 60px;
+}
+.mapa{
+    display: flex;
+    flex-wrap:wrap; 
+    justify-content: space-evenly;
+    width: 100%;
+    height: auto;
+}
+.mapa iframe {
+    width: 100%;
+    height: 400px; 
+}
+/* Estilos generales del formulario */
+#petForm {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #f4f4f4;
+    border-radius: 10px;
+}
+
+/* Estilos para etiquetas */
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+/* Estilos para campos de entrada y select */
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+/* Estilos para botón de envío */
+button[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+/* Estilos para mensajes de error */
+.error-message {
+    display: none;
+    color: red;
+    margin-bottom: 10px;
+}
+
+/* Estilos para campos de entrada con error */
+input:invalid,
+select:invalid,
+textarea:invalid {
+    border-color: red;
+}
+
+/* Estilos para mostrar mensajes de error */
+input:invalid + .error-message,
+select:invalid + .error-message,
+textarea:invalid + .error-message {
+    display: block;
+}
+
+/* Estilos responsivos */
+@media screen and (max-width: 600px) {
+    #petForm {
+        padding: 10px;
+    }
+
+    input[type="text"],
+    select,
+    textarea {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width:768px){
+    .contenedor{
+        margin: 0;
+    }
+    .contDualCol, .contDualFil{
+        margin-top: 10px;
+    }
+    .contDhijo, .contDualFil{
+        flex-direction: column;
+    }
+    .contDhijo h4{
+        font-size: 15px;
+    }
+    .contDhijo h1{
+        font-size: 35px;
+    }
+    .contDhijo h3,.contCuatrupleFil h3{
+        font-size: 20px; 
+    }
+    .contDhijo p, .contCuatrupleFil span, .contCuatrupleFil p, .agendar p{
+        font-size: 15px;
+    }
+    .contDhijo h2,.agendar h2{
+        font-size: 30px;
+    }
+}

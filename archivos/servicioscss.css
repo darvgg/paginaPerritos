@@ -1,0 +1,157 @@
+.contenedor {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    margin: 0 20vw;
+}
+
+.contDual,.contDual2{
+    display: flex;
+    flex-direction: row;
+    height: auto;
+}
+.contDual3{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+}
+.contDhijo{
+    display: flex;
+    flex-direction: column;
+    justify-content:center;
+    width: 100%;
+    height: auto;
+}
+.contDhijo h4, .preguntasF h4{
+    font-size: 24px;
+}
+.contDhijo h3{
+    font-size: 30px;
+}
+.contDhijo p, .preguntasF p{
+    font-size: 20px;
+}
+.contDhijo img{
+    max-width: 100%;
+    height: auto;
+}
+.contDhijo h2{
+    font-size: 40px;
+}
+.contDhijo h1{
+    font-size: 60px;
+}
+
+.contCuatrupleFil{
+    display: flex;
+    flex-wrap: row wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    max-width: 100%;
+}
+.contCuatrupleCol{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    max-width: 100%;
+}
+.contCuatruple h3 {
+    font-size: 36px;
+}
+.contCuatruple p,.contCuatruple p{
+    font-size: 20px; /* Tamaño de fuente para el texto */
+}
+.contCuatruple span {
+    font-size: 20px; /* Tamaño de fuente para el texto del enlace */
+    cursor: pointer;
+}
+.metodo1, .metodo2, .metodo3, .metodo4 {
+    flex: 1; /* Distribuir el espacio disponible entre los elementos */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos verticalmente */
+    padding: 20px; /* Agregar espacio interno */
+    max-width: 100%; /* Establecer un ancho máximo para cada método */
+}
+span:hover {
+    color: orange;
+}
+.metodo1 {
+    background-image: url(imagenes/MascotaSentada.png);
+}
+.metodo2 {
+    background-image: url(imagenes/MascotaAlerta.png);
+}
+.metodo3 {
+    background-image: url(imagenes/MascotaSalta.png);
+}
+.metodo4 {
+    background-image: url(imagenes/cortes.png);
+}
+video{
+    max-width: 100%;
+    height: auto;
+}
+.preguntasF {
+    flex: 1; /* Distribuir el espacio disponible entre los elementos */
+    display: flex;
+    background-color: rgba(245, 245, 220, 0.253);
+    flex-direction: column;
+    align-items:flex-start;
+    margin-top: 20px;
+    padding: 20px; /* Agregar espacio interno */
+    max-width: 100%; /* Establecer un ancho máximo para cada método */
+    border-radius: 20px;
+}
+
+
+@media (max-width:768px){
+    .contenedor{
+        margin: 0;
+    }
+    .contDhijo, .contDual{
+        flex-direction: column; 
+        align-items: center;
+    }
+    .contDual2{
+        flex-direction: row;
+    }
+    .contDhijo h4{
+        font-size: 15px;
+    }
+    .contDhijo h1{
+        font-size: 35px;
+    }
+    .contDhijo h3,.contCuatrupleFil h3{
+        font-size: 20px; 
+    }
+    .contDhijo p, .contCuatrupleFil span, .contCuatrupleFil p, .agendar p{
+        font-size: 15px;
+    }
+    .contDhijo h2,.agendar h2{
+        font-size: 30px;
+    }
+    .contCuatrupleFil{
+        flex-flow: row wrap;
+    }
+    .contCuatrupleFil, .metodo1, .metodo2, .metodo3, .metodo4 , .agendar{
+        flex-basis: 100%;
+    }
+    .agendarHijo{     
+        width: auto;     
+        padding-top: 10px;
+    }
+    .agendarHijo .boton{
+        margin-right: 0;
+    }
+    .contDual3{
+        margin-top: 10px;
+        flex-direction: column;
+        text-align: none;
+    }
+}

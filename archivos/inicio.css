@@ -1,0 +1,305 @@
+.introduccion {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    background-image: url(imagenes/homeFoto.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.introduccion .caja {
+    flex-basis: 50%; 
+    padding: 10px; 
+    color: #fff;
+}
+.introduccion .caja p{
+    font-size: 25px;
+}
+.introduccion .caja h1{
+    font-size: 70px;
+}
+.introduccion .caja h2 {
+    font-size: 60px;
+    color: orange;
+}
+
+
+.quienSon {
+    max-width: 100%;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+}
+.quienSonHijo1, .quienSonHijo2 {
+    flex-basis: 50%; 
+}
+.quienSonHijo1 img {
+    float: right;
+    width: auto; 
+    height: 250px; 
+}
+.quienSonHijo2 h2 {
+    font-size: 36px;
+    margin-top: 0;
+}
+.quienSonHijo2 h3, .quienSonHijo2 p {
+    font-size: 30px; 
+}
+
+
+.localizacion {
+    display: flex;
+    width: 100%;
+    height: auto; 
+    flex-direction: row;
+    align-items: center; 
+    justify-content: space-between;
+}
+.localizacion .localizacionHijo1,.localizacionHijo2 {
+    flex-basis: 48%; 
+    padding: 10px; 
+    height: auto; 
+}
+.localizacionHijo1 {
+    margin-left: 7.5%;
+}
+.localizacionHijo2 {
+    margin-right: 7.5%;
+}
+.localizacionHijo1 h2 {
+    font-size: 36px; 
+    margin-top: 0; 
+}
+.localizacionHijo1 p {
+    font-size: 30px; 
+}
+.localizacionHijo2 img {
+    width: auto; 
+    height: 250px;
+}
+.descarga{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+.descarga .boton, .descarga .boton .boton2{
+    margin-right: 25px;
+}
+
+.review {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: space-evenly;
+    align-items: center;
+    max-width: 100%;
+    height: auto;
+    background-image: url(imagenes/reviewFoto.jpg);
+    background-size: cover; 
+    background-position: center; 
+    background-repeat: no-repeat;  
+    padding: 15px;
+}
+.review .redesSociales {
+    display: flex;
+    justify-content: center;
+    margin-top: 15px; /* Agregar margen superior para separar las redes sociales */
+}
+.review h2 {
+    color: white;
+    font-weight: bold;
+    font-size: 50px; /* Especificar un tamaño de fuente en píxeles */
+    text-align: center; /* Centrar el texto horizontalmente */
+}
+
+
+.comoCuidar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; /* Alinear los elementos horizontalmente */
+    align-items: center; /* Alinear los elementos verticalmente */
+}
+.cuidarHijo1, .cuidarHijo2 {
+    flex-basis: calc(50% - 15px); /* Calcula el 50% del ancho menos el espacio entre elementos */
+    margin: 0 7.5px; /* Añade un margen horizontal para espaciar los elementos */
+    padding: 15px; /* Añade un relleno para separar el contenido de los bordes */
+    height: auto; /* Permitir que la altura se ajuste según el contenido */
+    width: auto; /* Permitir que el ancho se ajuste según el contenido */
+}
+.cuidarHijo1 {
+    order: 1;
+    text-align: center; 
+}
+.cuidarHijo1 h2 {
+    color: brown;
+    font-size: 50px; 
+}
+.cuidarHijo1 p {
+    font-size: 30px; 
+}
+.cuidarHijo2 {
+    order: 2; 
+}
+.cuidarHijo2 img {
+    width: 100%;
+    height: auto;
+}
+
+
+.metodos {
+    display: flex;
+    flex-wrap: row wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    max-width: 100%;
+}
+.metodo1, .metodo2, .metodo3, .metodo4 {
+    flex: 1; /* Distribuir el espacio disponible entre los elementos */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos verticalmente */
+    padding: 20px; /* Agregar espacio interno */
+    max-width: 100%; /* Establecer un ancho máximo para cada método */
+}
+span:hover {
+    color: orange;
+}
+.metodo1 {
+    background-image: url(imagenes/MascotaSentada.png);
+}
+.metodo2 {
+    background-image: url(imagenes/MascotaAlerta.png);
+}
+.metodo3 {
+    background-image: url(imagenes/MascotaSalta.png);
+}
+.metodo4 {
+    background-image: url(imagenes/cortes.png);
+}
+.metodos h3 {
+    font-size: 36px;
+}
+.metodos p {
+    font-size: 25px; /* Tamaño de fuente para el texto */
+}
+.metodos span {
+    font-size: 25px; /* Tamaño de fuente para el texto del enlace */
+    cursor: pointer;
+}
+
+
+.testimonios {
+    flex-basis: 100%;
+    display: flex;
+    flex-direction: column;
+}
+.testimonioHijo1, .testimonioHijo2, .testimonioHijo3 {
+    flex-grow: 1;
+    flex-basis: 100%;
+    height: auto;
+}
+.testimonioHijo1 {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+}
+.testimonioNieto {
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    width: 50%;
+}
+.testimonioHijo1 h2, .testimonioHijo3 h2 {
+    font-size: 50px;
+}
+.testimonioHijo1 h4 {
+    font-size: 25px;
+}
+.testimonioHijo1 p, .testimonioHijo3 p {
+    font-size: 28px;
+}
+.testimonioHijo2 {
+    display: flex;
+    flex-wrap: wrap; /* Permitir que los elementos se envuelvan en pantallas pequeñas */
+    justify-content: center; /* Centrar los elementos horizontalmente */
+    max-width: 100%;
+}
+.comentario {
+    flex: 1; /* Distribuir el espacio disponible entre los elementos */
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Centrar los elementos verticalmente */
+    padding: 20px; /* Agregar espacio interno */
+    width: 50%; /* Establecer un ancho máximo para cada método */
+    height: 100%;
+    text-align: center; /* Centrar el texto horizontalmente */
+}
+.fotoPersona img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%; /* Esto hace que la imagen sea un círculo */
+}
+.testimonioHijo3 {
+    display: flex;
+    flex-basis: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    height: auto;
+}
+@media (max-width: 768px) {
+        * {
+            margin: 0;
+            margin-top: 0;
+            margin-left: 0;
+            margin-bottom: 0;
+        }
+        .introduccion .caja h1 {
+            font-size: 30px;
+        }
+        .introduccion .caja h2, .cuidarHijo1 h2, .testimonioHijo1 h2, .testimonioHijo3 h2 {
+            font-size: 25px;
+        }
+        .quienSonHijo2 h2, .review h2 {
+            font-size: 24px;
+        }
+        .quienSonHijo2 h3, .quienSonHijo2 p, .localizacionHijo1 p, .cuidarHijo1 p, .metodos span, .metodos h3, .metodos p, .testimonioHijo1 p, .testimonioHijo3 p{
+            font-size: 14px;
+        }
+        .introduccion .caja, .quienSon, .quienSonHijo1, .quienSonHijo2, .localizacion .localizacionHijo1,
+        .localizacionHijo2, .cuidarHijo1, .cuidarHijo2, .comoCuidar, .metodos, .metodo1, .metodo2, .metodo3, .metodo4, .testimonioHijo2,.testimonioHijo1, .testimonioHijo3 {
+            flex-basis: 100%;
+        }
+        .quienSonHijo1 img, .localizacionHijo2 img, .cuidarHijo2 img {
+            width: auto;
+            height: 150px;
+        }
+        .comoCuidar,.localizacion,.review {
+            flex-direction: column;
+        }
+        .metodos {
+            flex-flow: row wrap;
+        }
+        .testimonios h4{
+            font-size: 14px;
+        }
+        .testimonioHijo2,.testimonioHijo1, .testimonioHijo3{
+            flex-flow: column wrap;
+            align-items: stretch;
+        }
+        .testimonioNieto{     
+            width: auto;     
+            padding-top: 10px;
+        }
+        .testimonioNieto .boton{
+            margin-right: 0;
+        }
+        .comentario{
+            width: auto;
+        }
+}    
